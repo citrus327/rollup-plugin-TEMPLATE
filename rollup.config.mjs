@@ -37,7 +37,17 @@ function createConfig({ pkg, external = [] }) {
         sourcemap: true,
       },
     ],
-    plugins: [typescript({ sourceMap: true })],
+    plugins: [
+      typescript({
+        sourceMap: true,
+        compilerOptions: {
+          noEmit: false,
+          emitDeclarationOnly: true,
+          declaration: true,
+          outDir: "./",
+        },
+      }),
+    ],
   };
 }
 

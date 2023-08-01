@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "description": "a rollup plugin",
   "author": "citrus327",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/es/index.js",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/es/index.mjs",
+  "types": "./dist/es/index.d.ts",
   "exports": {
-    "types": "./types/index.d.ts",
-    "import": "./dist/es/index.js",
-    "default": "./dist/cjs/index.js"
+    "types": "./dist/es/index.d.ts",
+    "import": "./dist/es/index.mjs",
+    "default": "./dist/cjs/index.cjs"
   },
-  "types": "./types/index.d.ts",
   "files": [
     "dist",
     "!dist/**/*.map",
-    "types",
     "README.md",
     "LICENSE"
   ],
