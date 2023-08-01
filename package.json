@@ -19,6 +19,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "dev": "rollup -cw",
     "build": "rollup -c"
   },
   "keywords": [
