@@ -1,0 +1,47 @@
+{
+  "name": "rollup-plugin-template",
+  "version": "1.0.0",
+  "description": "a rollup plugin",
+  "author": "citrus327",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "import": "./dist/es/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "rollup",
+    "plugin"
+  ],
+  "peerDependencies": {
+    "rollup": "^1.20.0||^2.0.0||^3.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.4.5",
+    "rollup": "^3.2.3",
+    "typescript": "^4.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.1"
+  }
+}
