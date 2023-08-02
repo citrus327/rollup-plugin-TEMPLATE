@@ -40,6 +40,7 @@ function createConfig({ pkg, external = [] }) {
     plugins: [
       typescript({
         sourceMap: true,
+        tsconfig: "./tsconfig.json",
         compilerOptions: {
           noEmit: false,
           emitDeclarationOnly: true,
